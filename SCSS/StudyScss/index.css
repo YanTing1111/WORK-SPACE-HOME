@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav ul {
   margin: 0;
   padding: 0;
@@ -10,6 +11,123 @@ nav a {
   display: block;
   padding: 6px 12px;
   text-decoration: none;
+}
+
+body {
+  line-height: 2;
+}
+
+body {
+  background-color: green;
+}
+
+div .div {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+}
+
+nav a {
+  color: red;
+}
+header nav a {
+  color: green;
+}
+
+.box {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+button {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn, .btn-primary {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.box {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.box-center {
+  width: 500px;
+  height: 300px;
+}
+
+/*
+    sass继承
+*/
+.btn, .btn-primary {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #f36;
+  color: #fff;
+}
+
+/*
+    sass占位符%
+*/
+.btn, .btn-primary, .block {
+  margin-top: 5px;
+}
+
+.btn, .btn-primary, .block span {
+  padding-top: 5px;
+}
+
+.btn, .btn-primary {
+  color: red;
+}
+
+/*
+    sass通过@extend调用占位符%
+*/
+.btn, .btn-primary, .block {
+  margin-top: 5px;
+}
+
+.btn, .btn-primary, .block span {
+  padding-top: 5px;
+}
+
+/*
+    sass插值
+*/
+.login-box {
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+/*
+    sass变量计算
+*/
+.container {
+  width: 960px;
+}
+
+/*
+    sass数字运算
+*/
+.box {
+  width: 60px;
 }
 
 /*# sourceMappingURL=index.css.map */
